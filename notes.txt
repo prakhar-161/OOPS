@@ -1,0 +1,87 @@
+******************************************** NOTES ********************************************
+Video - 1
+
+Class - is blueprint
+object is an instance of class
+if no value assigned to object of a class, then it has garbage value in it
+
+Empty class -
+we define an object in main() function, then
+size of the object of an empty class - 1 byte
+
+we can define and make class in another file and 
+import into a different file for creating instance
+
+Access Modifiers - public, private, protected
+access using . operator
+
+Getter & Setter -
+get() -> retrieving value
+set() -> assigning value
+can be used to access and set private data members(variables) using these functions. For eg - health here
+setter -> a condition can be applied here for eg. only a specific user is allowed to set the health of Hero.
+
+Types of object creation / allocation -
+Static (.)
+Dynamic (->) or (*object_name)
+
+Constructors -
+They are invoked at the time of object creation
+No return type
+default, parameterized, copy constructor
+
+"this" keyword -> basically a pointer that stores addresses
+it stores the address of the current object
+so we can access the members of that object using 'this' pointer and assign them values 
+equal to the input parameters in the parameterized constructor
+
+Copy Constructor -
+copies the values of the members of the constructor which is copied
+we can define our own copy constructor also
+
+Shallow & Deep Copy -
+default copy constructor does shallow copy
+illustration in practise2.cpp file
+Shallow Copy : same memory accessed by two different object (pass by reference example: *name) (in code)
+Deep Copy : different memory created for the new copied object when copy constructor is called and 
+            there is different memory for already created object.
+
+Copy Assignment Operator (=)
+
+Destructor -
+-Used for deallocating the memory
+-When object is going out-of-scope, destructor is called and thus, free the memory
+-Automatically created when the class is created with its same name
+-No return type
+-No input parameters
+-For dynamically allocated objects, destructor has to be called manually
+-For statically allocated objects, destructor is called automatically
+
+Static keyword - 
+create data member which belongs to class only, not objects
+no need to create object to access it
+need to be initialized outside class using scope resolution operator
+
+Static functions - 
+no need to create objects to access them
+no this keyword can be used inside them
+they can only access static data memnbers
+they can't access data member which are not static
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28:00 $$ - to read
+padding $$
+greedy alignment $$
